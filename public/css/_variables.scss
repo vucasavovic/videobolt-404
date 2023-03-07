@@ -1,0 +1,41 @@
+$black:rgb(10, 10, 10);
+$mainColor:#00D2DC;
+$mainHighlited:#00f2ff;
+$border:1px solid #edeef3;
+
+$page-max-width:1440px;
+
+@font-face {
+    font-family: "Sinter-Thin";
+    src: url("../fonts/sinter/sinter-thin.otf") format('opentype'),
+}
+@font-face {
+    font-family: "Sinter-Light";
+    src: url("../fonts/sinter/sinter-light.otf") format('opentype'),
+}
+
+@font-face {
+    font-family: "Sinter";
+    src: url("../fonts/sinter/sinter-regular.otf") format('opentype'),
+}
+@font-face {
+    font-family: "Sinter-Medium";
+    src: url("../fonts/sinter/sinter-medium.otf") format('opentype'),
+}
+@font-face {
+    font-family: "Sinter-SemiBold";
+    src: url("../fonts/sinter/sinter-semiBold.otf") format('opentype'),
+}
+@font-face {
+    font-family: "Sinter-Bold";
+    src: url("../fonts/sinter/sinter-bold.otf") format('opentype'),
+}
+
+@mixin breakpoint-down($width){
+    @media only screen and (max-width:$width) {
+        @content;
+    }
+}
+
+
+
